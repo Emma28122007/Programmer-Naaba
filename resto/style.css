@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fffaf6;
+  color: #2d2d2d;
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 30px;
+  background: #7b1e1e;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+nav .logo {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 50%;
+  border: 3px solid white;
+  text-align: center;
+}
+
+nav .logo span {
+  color: #ffd700;
+  font-size: 18px;
+  position: relative;
+  top: -5px;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.btn button {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #e65100;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn button:hover {
+  background-color: #ff7043;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.acceuil {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("restau.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.ac-contenu {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ac-contenu h1 {
+  color: #ffd700;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.ac-contenu p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.app {
+  background: #fff;
+  text-align: center;
+}
+
+.titre {
+  color: #7b1e1e;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.app .contenu {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #333;
+}
+
+.spc {
+  background-color: #f8e7d1;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.spc .titre {
+  color: #7b1e1e;
+}
+
+.spc .contenu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding-top: 20px;
+  justify-items: center;
+}
+
+.spc .contenu .s p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.spc .contenu .s .img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+
+.cdn {
+  background-color: #2d2d2d;
+  color: white;
+  text-align: center;
+}
+
+.cdn .contenu {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.cdn .reseaux a {
+  color: #ffd700;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: 0.5s ease;
+}
+
+.cdn .reseaux a:hover {
+  scale: 1.1;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    justify-content: center;
+  }
+
+  .acceuil h1 {
+    font-size: 32px;
+  }
+
+  .ac-contenu {
+    padding: 20px;
+  }
+
+  .spc .contenu {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 500px) {
+    .spc .contenu {
+      grid-template-columns: 1fr;
+    }
+
+    .btn {
+      flex-direction: column;
+    }
+  }
+}

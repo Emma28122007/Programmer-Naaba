@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #202940;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+header .logo span {
+  color: #ffb400;
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ffb400;
+}
+
+/* Layout global */
+section {
+  width: 100%;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.acceuil,
+.app,
+.avantages,
+.service {
+  min-height: 100vh;
+}
+
+/* ACCUEIL */
+.acceuil {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("ap.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.acceuil h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.acceuil h1 span {
+  color: #ffb400;
+}
+
+.acceuil h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.acceuil p {
+  font-size: 1rem;
+  max-width: 700px;
+  color: #ddd;
+}
+
+/* TITRES DE SECTIONS */
+.titre h1,
+.avantages h1,
+.contact h1 {
+  font-size: 2rem;
+  color: #202940;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.titre h1::after,
+.avantages h1::after,
+.contact h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffb400;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* À propos & Avantages */
+.app .contenu,
+.avantages .contenu {
+  max-width: 800px;
+  text-align: center;
+}
+
+.app p,
+.avantages p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* SERVICES */
+.service .contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.service .contenu div {
+  width: 220px;
+}
+
+.service img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service img:hover {
+  transform: scale(1.05);
+}
+
+.service p {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #202940;
+}
+
+/* CONTACT */
+.contact {
+  background: #202940;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  color: #ffb400;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  color: white;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.reseaux {
+  margin-top: 1.5rem;
+}
+
+.reseaux a {
+  color: #ffb400;
+  font-size: 1.8rem;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.reseaux a:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+/* FOOTER */
+footer {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p{
+  color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .service .contenu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 1rem;
+  }
+
+  .acceuil h1 {
+    font-size: 2rem;
+  }
+
+  .acceuil h2 {
+    font-size: 1.1rem;
+  }
+}

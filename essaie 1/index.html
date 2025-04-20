@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Essaie</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            <a href="">Programmer <span>Naaba</span></a>
+        </div>
+        <div class="nav-recip">
+            <ul>
+               <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100"><li><a href="#ac"class="lien" >Acceuil</a></li></div> 
+               <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200"><li><a href="#apm"class="lien">A Propos De Moi</a></li></div> 
+               <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300"><li><a href="#mr"class="lien">Mes Realisation</a></li></div> 
+               <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400"><li><a href="#ms"class="lien">Mes Services</a></li></div> 
+               <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500"><li><a href="#mc"class="lien">Me contacter</a></li></div> 
+            </ul>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()" style="color:#ffffff;"></i>
+            <div class="derouler">
+                <div class="liens">
+                    <a href="#ac">Acceuil</a>
+                    <a href="#apm">A Propos De Moi</a>
+                    <a href="#mr">Mon Experience</a>
+                    <a href="#ms">Mes services</a>
+                    <a href="#mc">Me Contacter</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>  
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="recip-prin" id="ac">
+        <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+            <img src="img.JPG" alt="">
+        </div>
+        <div class="conten">
+            <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Salut, c'est Programmer <span>Naaba</span></h1>
+            <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">je suis un Developper <span>Web</span></h2>
+            <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Vous cherchez à créer un site web unique et performant pour votre entreprise ou votre projet personnel ? Vous êtes au bon endroit. Je mets à votre disposition mes compétences pour vous aider à développer une présence en ligne qui répond à vos besoins. Chaque projet est conçu sur mesure, avec un design moderne et une navigation intuitive. N'hésitez pas à explorer mes réalisations et à me contacter pour discuter de votre futur site !</p>
+            <div class="social-lien">
+                <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".derouler")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".derouler")
+            navbar.style.transform = "translateY(-400px)"
+        }
+    </script>
+    <section>
+        <div class="apm" id="apm">
+            <div class="contenu">
+                <div class="titre" data-aos="fade-up" data-aos-duration="1500"><span>A Propos De Moi</span></div>
+                <div class="apm-details">
+                    <div class="gauche" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                        <img src="img.JPG" alt="">
+                    </div>
+                    <div class="droite" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+                        <p>Je m'appelle <em>Emmanuel BASSANE</em>, passionné par le développement web et la création de sites internet. Actuellement élève, je mets à profit mes compétences pour concevoir des sites modernes, professionnels et adaptés aux besoins de chacun.Chaque projet est pour moi une opportunité d’apprendre, de créer et d’apporter de la valeur. Même en étant encore en formation, je m’investis pleinement pour offrir un travail de qualité, avec rigueur et créativité.Mon objectif ? Vous aider à donner vie à vos idées en ligne, tout en continuant à progresser chaque jour dans ce domaine passionnant.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mr" id="mr">
+            <div class="titre" data-aos="fade-up" data-aos-duration="1500"><span>Mes Realisations</span></div>
+            <div class="bouton">
+                <a href="" class="mv" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200"><i>Mes ventes    <span>0</span></i></a>
+                <a href="" class="mr" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300"><i>Mes realisations    <span>0</span></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="ms" id="ms">
+            <div class="titre" data-aos="fade-up" data-aos-duration="1500"><span>Mes Services</span></div>
+            <div class="intro" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Voici les types de sites web que je propose, selon vos besoins et vos objectifs :</div>
+            <div class="contenu2">
+                <div class="s" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="300">
+                    <h3>Site Événementiel Simple</h3>
+                    <p>Une page ou petit site pour présenter un événement : mariage, anniversaire, concert, soirée, lancement de produit… avec infos, galerie, RSVP, et carte. <br>Idéal pour : particuliers, organisateurs d'événements, artistes</p>
+                </div>
+                <div class="s" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="400">
+                    <h3>CV en ligne / Portfolio</h3>
+                    <p>Un site pour montrer son parcours, ses compétences, ses projets. Parfait pour les étudiants, freelances, créatifs, développeurs débutants. <br>Idéal pour : étudiants, freelances, chercheurs d’emploi.</p>
+                </div>
+                <div class="s" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="500">
+                    <h3>Site de menu pour restaurant / snack</h3>
+                    <p>Un site avec la carte/menu, infos pratiques (adresse, horaires), et contact. Tu peux aussi intégrer la commande en ligne (si besoin). <br>Idéal pour : petits restos, snacks, food trucks</p>
+                </div>
+                <div class="s" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="600">
+                    <h3>Site Vitrine Basique</h3>
+                    <p>Une boutique en ligne simplifiée pour vendre quelques produits ou services. Paiement en ligne, design clair, facile à gérer. <br>Idéal pour : créateurs, artisans, petits business en ligne.</p>
+                </div>
+                <div class="s" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="700">
+                    <h3>Mini Boutique</h3>
+                    <p>Une boutique en ligne simplifiée pour vendre quelques produits ou services. Paiement en ligne, design clair, facile à gérer. <br>Idéal pour : créateurs, artisans, petits business en ligne.</p>
+                </div>
+                <div class="s" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="800">
+                    <h3>Site Personnalisé Simple</h3>
+                    <p>Tu as une idée en tête mais tu ne sais pas par où commencer ? Dis-moi ce que tu veux, et je crée un site à ton image, sans complications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mc" id="mc">
+            <div class="titre" data-aos="fade-up" data-aos-duration="1500"><span>Me Contacter</span></div>
+                <div class="contenu3">
+                <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><i class="fa-brands fa-telegram"></i></a>
+                <a href="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><i class="fa-solid fa-square-envelope"></i></a>
+             </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+      </script>
+</body>
+</html>

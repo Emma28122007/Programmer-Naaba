@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programmer Naaba | Création de Sites Web</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+      <a href="#accueil">Programmer <span>Naaba</span></a>
+    </div>
+    <nav>
+      <div class="nav-links" id="nav-links">
+        <a href="#accueil" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">Accueil</a>
+        <a href="#services" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Services</a>
+        <a href="#services" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">Exemples</a>
+        <a href="#processus" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">Processus</a>
+        <a href="#contact" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">Contact</a>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()" aria-label="Ouvrir le menu"></i>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="contenu" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600">
+        <h1>Je crée des sites web <span>Modernes</span>, <span>Rapides</span> et <span>Adaptés</span> à vos besoins.</h1>
+        <p>Site vitrine, boutique en ligne ou portfolio — je m’occupe de tout, même si vous partez de zéro.</p>
+        <a href="#contact" class="btn">Discutons de votre projet</a>
+      </div>
+    </section>
+
+    <section class="avantages">
+      <div class="contenu">
+        <h2>Pourquoi me confier votre site web ?</h2>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i> Site rapide, clair et professionnel</li>
+          <li><i class="fa-solid fa-mobile-screen"></i> Compatible mobile, tablette et ordinateur</li>
+          <li><i class="fa-solid fa-magnifying-glass"></i> Référencement Google de base (SEO)</li>
+          <li><i class="fa-solid fa-screwdriver-wrench"></i> Adapté à votre activité (commerce, service, blog…)</li>
+        </ul>
+        <a href="#services" class="btn-light">Voir les types de sites</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="titre"><h2>Services</h2></div>
+      <div class="content">
+        <div class="s">
+          <div class="h"><h4>Site vitrine</h4></div>
+          <div class="img"><img src="gara.png" alt=""></div>
+          <div class="lien"><a href="garage/garage.html">Voir le site</a></div>
+        </div>
+        <div class="s">
+          <div class="h"><h4>Portofolio</h4></div>
+          <div class="img"><img src="porto.png" alt=""></div>
+          <div class="lien"><a href="essaie 1/index.html">Voir le site</a></div>
+        </div>
+        <div class="s">
+          <div class="h"><h4>Site d'événement</h4></div>
+          <div class="img"><img src="fs.png" alt=""></div>
+          <div class="lien"><a href="cine/index.htm">Voir le site</a></div>
+        </div>
+        <div class="s">
+          <div class="h"><h4>Site Menu restaurant</h4></div>
+          <div class="img"><img src="restau.png" alt=""></div>
+          <div class="lien"><a href="resto/indx.html">Voir le site</a></div>
+        </div>
+        <div class="s">
+          <div class="h"><h4>Site personnalisé</h4></div>
+          <div class="img"><img src="lv.jpeg" alt=""></div>
+          <div class="lien"><a href="#contact">Discuter</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="processus">
+      <div class="titre"><h2>Comment ça se passe ?</h2></div>
+      <div class="contenu">
+        <ol>
+          <li>Vous me contactez pour expliquer votre besoin</li>
+          <li>Je vous propose une maquette et un devis gratuit</li>
+          <li>Je crée le site en collaboration avec vous</li>
+          <li>Livraison rapide et mise en ligne</li>
+        </ol>
+        <a href="#contact" class="btn">Me Contacter</a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="titre"><h2>Me Contacter</h2></div>
+      <div class="contenu3">
+        <a href="https://wa.me/+22606404712" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/tonNomUtilisateur" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="mailto:ebassane41@gmail.com"><i class="fas fa-envelope"></i></a>     
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("active");
+    }
+  </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({offset:0});
+  </script>
+</body>
+</html>
